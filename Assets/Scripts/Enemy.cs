@@ -4,6 +4,12 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
+    
+    [Header("// ATTACK -----------------------------------------------------------------------------------------")]
+    [SerializeField] private int damage;
+    [Space(5)]
+    [SerializeField] private float knockbackForce;
+    [SerializeField] private float knockbackUpForce;
 
     [Header("// MOVE -----------------------------------------------------------------------------------------")]
     [SerializeField] private float moveForce;
@@ -24,7 +30,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(PatrolLoop());
+        StartCoroutine(Move());
     }
 
     void FixedUpdate()
@@ -40,10 +46,22 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log($"{other.gameObject.name} take {damage} damages");
+            Life life = other.gameObject.GetComponent<Life>();
+            life.TakeDamage(damage);
+
+            KnockBack(other);
+        }
+    }
+
 
 
     // FUNCTIONS //-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-
-    IEnumerator PatrolLoop()
+    IEnumerator Move()
     {
         while (true)
         {
@@ -62,4 +80,22 @@ public class Enemy : MonoBehaviour
             direction *= -1;
         }
     }
+
+
+    private void KnockBack(Collision2D other)
+    {
+        Rigidbody2D playerRb = other.gameObject.GetComponent<Rigidbody2D>();
+
+        if (playerRb != null)
+        {
+            // OPOSITE DIRECTION
+            Vector2 knockbackDir = (other.transform.position - transform.position).normalized;
+
+            // RESET VELOCITY
+            playerRb.velocity = Vector2.zero;
+
+            // APPLY KNOCKBACK BACK AND UP
+            playerRb.AddForce(new Vector2(knockbackDir.x * knockbackForce, knockbackUpForce), ForceMode2D.Impulse);
+        }
+    }  
 }
