@@ -6,16 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TitleScreen.unity
+    path: Assets/Scenes/Screens/TitleScreen.unity
     guid: bfccbede4fe418e4bbd05d92c4efe404
   - enabled: 1
-    path: Assets/Scenes/LevelSelection.unity
+    path: Assets/Scenes/Screens/LevelSelection.unity
     guid: d08c340dca132b0439ada384988e81f4
   - enabled: 1
-    path: Assets/Scenes/CompleteLevel.unity
+    path: Assets/Scenes/Levels/Level_1.unity
+    guid: d877f76d82a9cdf489278c56782948f6
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level_2.unity
+    guid: 3ee56d711f7575648aa6476bc3bb0db8
+  - enabled: 1
+    path: Assets/Scenes/Screens/CompleteLevel.unity
     guid: 39cdfbe1b07813e45a0b04d6286eecd8
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
+    path: Assets/Scenes/Screens/GameOver.unity
     guid: 36453bd4876f5fc4cb075b0dae1fd87b
   - enabled: 1
     path: Assets/Scenes/Test.unity

@@ -275,7 +275,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  rayLength: 0.9
+  rayLength: 0.8
 --- !u!114 &7584390326762550190
 MonoBehaviour:
   m_ObjectHideFlags: 0
