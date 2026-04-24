@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flipper_Right
       objectReference: {fileID: 0}
+    - target: {fileID: 2596962112270126132, guid: 2e34ab215e192a34388dcb088673d48c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.8862882
+      objectReference: {fileID: 0}
     - target: {fileID: 5204099064094807182, guid: 2e34ab215e192a34388dcb088673d48c, type: 3}
       propertyPath: side
       value: 1
