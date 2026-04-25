@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class SceneTransition : MonoBehaviour
 {
     [SerializeField] private Image fade;
     [SerializeField] private float fadeTime;
@@ -34,6 +34,12 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(fadeTime);
         SceneManager.LoadScene(sceneName);
     }
+
+
+    // RETRY --------------------
+    public void RetryLevel()
+    { LoadScene(GameState.currentScene); }
+
 
     // EXIT --------------------
     public void Exit()

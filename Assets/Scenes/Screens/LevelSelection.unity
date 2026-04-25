@@ -790,6 +790,22 @@ PrefabInstance:
       propertyPath: m_text
       value: /?."4%T-
       objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: sceneName
+      value: Level_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: levelIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: sceneTransition
+      value: 
+      objectReference: {fileID: 194429320}
     - target: {fileID: 2608996031531394466, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -1169,6 +1185,22 @@ PrefabInstance:
       propertyPath: m_text
       value: /?."3%T-
       objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: sceneName
+      value: Level_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: levelIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: sceneTransition
+      value: 
+      objectReference: {fileID: 194429320}
     - target: {fileID: 2608996031531394466, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -1635,6 +1667,22 @@ PrefabInstance:
       propertyPath: m_text
       value: LEVEL 2
       objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 1339220013}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: sceneName
+      value: Level_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: levelIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: sceneTransition
+      value: 
+      objectReference: {fileID: 194429320}
     - target: {fileID: 2926197456550884289, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1721,6 +1769,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 64709034143207629, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
   m_PrefabInstance: {fileID: 1339220011}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1339220013 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2608996031531394466, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+  m_PrefabInstance: {fileID: 1339220011}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1588800575
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,6 +2486,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 800587730708853416, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
+      propertyPath: sceneTransition
+      value: 
+      objectReference: {fileID: 194429320}
     - target: {fileID: 2926197456550884289, guid: 03bae6dae7531ff4c8a5c63085986cfb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

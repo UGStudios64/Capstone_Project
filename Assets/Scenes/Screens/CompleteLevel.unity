@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select Level  >
+  m_text: 'Select Level '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c8f251672713b140b7c27c852fdfb24, type: 2}
   m_sharedMaterial: {fileID: 5396114676718713386, guid: 7c8f251672713b140b7c27c852fdfb24, type: 2}
