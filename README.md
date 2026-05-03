@@ -15,10 +15,10 @@ malvaggia di nome Tilt Zapper, ci penserá Bill a viaggiare di Pinball in Pinbal
 // COMANDI //-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
 
 PLAYER--------
-A -> left
-D -> right
-W -> break
+- A -> left
+- D -> right
+- W -> break
 
 FLIPPERS------
-MOUSE LEFT BUTTON -> left flipper
-MOUSE RIGHT BUTTON -> right flipper
+- MOUSE LEFT BUTTON -> left flipper
+- MOUSE RIGHT BUTTON -> right flipper
